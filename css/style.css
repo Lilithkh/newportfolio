@@ -219,7 +219,7 @@ label {
 }
 
 button {
-    border-radius: 0;
+    border-radius: 8px;
 }
 
 button:focus {
@@ -1613,9 +1613,6 @@ a.close.disabled {
 .modal-dialog-centered::before {
     display: block;
     height: calc(100vh - 1rem);
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
     content: "";
 }
 
@@ -1733,9 +1730,6 @@ a.close.disabled {
 
     .modal-dialog-centered::before {
         height: calc(100vh - 3.5rem);
-        height: -webkit-min-content;
-        height: -moz-min-content;
-        height: min-content;
     }
 
     .modal-sm {
@@ -2068,11 +2062,6 @@ html {
 }
 
 ::-moz-selection {
-    color: #fff;
-    background-color: #212121;
-}
-
-::-webkit-selection {
     color: #fff;
     background-color: #212121;
 }
@@ -2475,7 +2464,7 @@ figcaption {
 
 section {
     background-color: #fff;
-    padding: 88px 0;
+    padding: 40px 0;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -2803,7 +2792,7 @@ section {
 }
 
 .logo__url {
-    height: 136px;
+    height: 80px;
     display: flex;
     align-items: center;
     transition: all 0.3s ease;
@@ -3164,9 +3153,7 @@ header .flex-child.flex-right {
 
 /* Bottom Footer
 -------------------------------------------------------*/
-.footer__bottom {
-    padding: 28px 0;
-}
+
 
 .footer__bottom .row {
     align-items: center;
@@ -3288,12 +3275,12 @@ header .flex-child.flex-right {
     height: auto;
     width: auto;
     border: 0;
-    border-radius: 0;
+    border-radius: 8px;
     transition: all 0.4s cubic-bezier(0.25, 0.74, 0.22, 0.99);
     font-size: 18px;
     font-size: 1.125rem;
     color: #fff;
-    background-color: #131313;
+    background-color: #0052f8;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     position: relative;
@@ -3333,7 +3320,7 @@ header .flex-child.flex-right {
 .btn--md {
     font-size: 18px;
     font-size: 1.125rem;
-    padding: 24px 48px;
+    padding: 12px 24px;
 }
 
 .btn--color {
@@ -3349,6 +3336,176 @@ header .flex-child.flex-right {
     border-radius: 70px;
 }
 
+/*-------------------------------------------------------*/
+/* Experience
+/*-------------------------------------------------------*/
+.timeline{
+    position:relative;
+    margin:50px auto;
+    padding:40px 0;
+    width:auto;
+    box-sizing:border-box;
+}
+.timeline:before{
+    content:'';
+    position:absolute;
+    left:50%;
+    width:2px;
+    height:100%;
+    background:#adb5bd;
+}
+.timeline ul{
+    padding:0;
+    margin:0;
+}
+.timeline ul li{
+    list-style:none;
+    position:relative;
+    width:50%;
+    padding:20px 40px;
+    box-sizing:border-box;
+}
+.timeline ul li:nth-child(odd){
+    float:left;
+    text-align:right;
+    clear:both;
+}
+.timeline ul li:nth-child(even){
+    float:right;
+    text-align:left;
+    clear:both;
+}
+.content{
+    padding-bottom:20px;
+}
+.timeline ul li:nth-child(odd):before
+{
+    content:'';
+    align-items: flex-start;
+    position:absolute;
+    width:10px;
+    height:10px;
+    top:24px;
+    right:-6px;
+    background:#0052f8;
+    border-radius:50%;
+    box-shadow:0 0 0 3px rgba(0,82,248,0.2);
+}
+.timeline ul li:nth-child(even):before
+{
+    content:'';
+    position:absolute;
+    width:10px;
+    height:10px;
+    top:24px;
+    left:-4px;
+    background:#0052f8;
+    border-radius:50%;
+    box-shadow:0 0 0 3px rgba(0,82,248,0.2);
+}
+.timeline ul li h3{
+    padding:0;
+    margin:0;
+    color:#1b1e21;
+    font-weight:600;
+}
+.timeline ul li p{
+    margin:10px 0 0;
+    padding:0;
+}
+.timeline ul li .time h4{
+    margin:0;
+    padding:0;
+    font-size:14px;
+    color: #fff;
+}
+.timeline ul li:nth-child(odd) .time
+{
+    position:absolute;
+    top:12px;
+    right:-230px;
+    margin:0;
+    padding:8px 16px;
+    background:#0052f8;
+    color:#fff;
+    border-radius:18px;
+    box-shadow:0 0 0 3px rgba(0,82,248,0.2);
+}
+.timeline ul li:nth-child(5) .time
+{
+    position:absolute;
+    top:12px;
+    right:-246px;
+    margin:0;
+    padding:8px 16px;
+    background:#0052f8;
+    color:#fff;
+    border-radius:18px;
+    box-shadow:0 0 0 3px rgba(0,82,248,0.2);
+}
+.timeline ul li:nth-child(even) .time
+{
+    position:absolute;
+    top:12px;
+    left:-235px;
+    margin:0;
+    padding:8px 16px;
+    background:#0052f8;
+    color:#fff;
+    border-radius:18px;
+    box-shadow:0 0 0 3px rgba(0,82,248,0.2);
+}
+.timeline ul li:nth-child(6) .time
+{
+    position:absolute;
+    top:12px;
+    left:-245px;
+    margin:0;
+    padding:8px 16px;
+    background:#0052f8;
+    color:#fff;
+    border-radius:18px;
+    box-shadow:0 0 0 3px rgba(0,82,248,0.2);
+}
+@media(max-width:1000px)
+{
+    .timeline{
+        width:100%;
+    }
+}
+@media(max-width:767px){
+    .timeline{
+        width:100%;
+        padding-bottom:0;
+    }
+    h1{
+        font-size:40px;
+        text-align:center;
+    }
+    .timeline:before{
+        left:20px;
+        height:100%;
+    }
+    .timeline ul li:nth-child(odd),
+    .timeline ul li:nth-child(even)
+    {
+        width:100%;
+        text-align:left;
+        padding-left:50px;
+        padding-bottom:50px;
+    }
+    .timeline ul li:nth-child(odd):before,
+    .timeline ul li:nth-child(even):before
+    {
+        top:-18px;
+        left:16px;
+    }
+    .timeline ul li:nth-child(odd) .time,
+    .timeline ul li:nth-child(even) .time{
+        top:-30px;
+        left:50px;
+        right:inherit;
+    }}
 /*-------------------------------------------------------*/
 /* Form Elements
 /*-------------------------------------------------------*/
@@ -3820,7 +3977,7 @@ table thead tr th {
 /*-------------------------------------------------------*/
 @media only screen and (min-width: 768px) {
     .intro {
-        padding-bottom: 80px;
+        padding-bottom: 56px;
     }
 }
 
@@ -3955,8 +4112,12 @@ table thead tr th {
 .hero_222 {
     padding-bottom: 60px;
     padding-top: 60px;
+    justify-content: center;
 }
-
+.CV{
+    display: flex;
+    justify-content: center;
+}
 @media only screen and (min-width: 1025px) {
     .hero {
         height: calc(100vh - 50px);
@@ -4205,8 +4366,7 @@ table thead tr th {
 }
 
 .services-content__item {
-    font-size: 28px;
-    font-size: 1.75rem;
+    font-size: 24px;
     margin-bottom: 48px;
     line-height: 1.3;
     color: #666666;
@@ -4231,7 +4391,7 @@ table thead tr th {
 }
 
 .services-content__item--is-active {
-    color: #000000;
+    color: #0052f8;
 }
 
 /*-------------------------------------------------------*/
