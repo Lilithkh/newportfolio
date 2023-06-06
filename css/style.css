@@ -6374,6 +6374,15 @@ a.cc-btn.cc-dismiss:hover, a.cc-btn.cc-dismiss:focus {
     position: relative;
 }
 
+.result{
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
 /* Results
 -------------------------------------------------------*/
 .section-project-results {
@@ -6386,7 +6395,7 @@ a.cc-btn.cc-dismiss:hover, a.cc-btn.cc-dismiss:focus {
 }
 
 .project-results__numbers {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 
 .project-results__list {
@@ -6395,7 +6404,7 @@ a.cc-btn.cc-dismiss:hover, a.cc-btn.cc-dismiss:focus {
     justify-content: space-between;
     margin-left: -10px;
     margin-right: -10px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 .project-results__number {
@@ -6434,6 +6443,7 @@ a.cc-btn.cc-dismiss:hover, a.cc-btn.cc-dismiss:focus {
 -------------------------------------------------------*/
 .project__gallery-img-holder {
     margin-bottom: 10px;
+    border: 1px solid #f9f9f9;
 }
 
 .project__gallery-item {
