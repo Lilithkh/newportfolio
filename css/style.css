@@ -397,7 +397,10 @@ template {
     margin-right: -10px;
     margin-left: -10px;
 }
-
+.prototype{
+    flex-direction: column;
+    align-items: center;
+}
 .no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -6379,8 +6382,6 @@ a.cc-btn.cc-dismiss:hover, a.cc-btn.cc-dismiss:focus {
     font-weight: 500;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    list-style: none;
 }
 
 /* Results
