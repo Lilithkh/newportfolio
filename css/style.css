@@ -224,7 +224,6 @@ button {
 
 button:focus {
     outline: 1px dotted;
-    outline: 5px auto -webkit-focus-ring-color;
 }
 
 input,
@@ -1519,13 +1518,13 @@ template {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1;
-    color: #000;
+    color: #0052f8;
     text-shadow: 0 1px 0 #fff;
     opacity: .5;
 }
 
 .close:hover {
-    color: #000;
+    color: #0052f8;
     text-decoration: none;
 }
 
@@ -2122,7 +2121,7 @@ a {
 
 a:hover, a:focus {
     text-decoration: none;
-    color: #000000;
+    color: #0052f8;
 }
 
 p {
@@ -3339,6 +3338,16 @@ header .flex-child.flex-right {
     box-shadow: 0 12px 20px rgba(0, 82, 248, 0.25);
     border-color: transparent;
 }
+.btn-outline-info:focus{
+    color: #fff;
+    border: 2px solid #0052f8;
+}
+
+.btn-outline-info:focus-visible{
+    color: #fff;
+    border: 2px solid #0052f8;
+}
+
 .btn:focus {
     outline: none;
     color: #fff;
@@ -6137,7 +6146,7 @@ a.cc-btn.cc-dismiss:hover, a.cc-btn.cc-dismiss:focus {
 }
 
 .entry__article a:not(.wp-block-button__link):hover {
-    color: #000000;
+    color: #0052f8;
 }
 
 .entry__article ol, .entry__article ul {
@@ -6146,7 +6155,7 @@ a.cc-btn.cc-dismiss:hover, a.cc-btn.cc-dismiss:focus {
 
 .dropcap {
     float: left;
-    color: #000000;
+    color: #0052f8;
     font-weight: 700;
     font-size: 6.875rem;
     line-height: 1;
