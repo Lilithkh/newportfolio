@@ -2567,6 +2567,20 @@ display: flex;
 .project-process{
     width: 50%;
 }
+
+.statistics{
+    background-color: #0052f820;
+    border-left: 4px solid #0052f8;
+    border-radius: 2px;
+    padding: 8px;
+    font-weight: 600;
+    color: #0052f8;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.statistics p{
+    margin: 0;
+}
 /*-------------------------------------------------------*/
 /* Navigation
 /*-------------------------------------------------------*/
@@ -4369,6 +4383,7 @@ table thead tr th {
 .services-list__item:hover span::after, .services-list__item--is-active span::after {
     width: 100%;
 }
+
 
 .services-list__label {
     position: relative;
@@ -6384,7 +6399,9 @@ a.cc-btn.cc-dismiss:hover, a.cc-btn.cc-dismiss:focus {
     margin-bottom: -420px;
     z-index: 1;
     position: relative;
+    border: 1px solid #f9f9f9;
 }
+
 
 .result{
     font-size: 24px;
@@ -6401,7 +6418,6 @@ a.cc-btn.cc-dismiss:hover, a.cc-btn.cc-dismiss:focus {
 
 .project-results__title {
     font-size: 38px;
-    font-size: 2.375rem;
 }
 
 .project-results__numbers {
@@ -6420,21 +6436,22 @@ a.cc-btn.cc-dismiss:hover, a.cc-btn.cc-dismiss:focus {
 .project-results__number {
     font-family: "aktiv-grotesk-extended", "Montserrat", sans-serif;
     font-size: 32px;
-    font-size: 2rem;
     font-weight: 700;
     display: block;
+    color: #0052f8;
 }
 
 @media only screen and (min-width: 1025px) {
     .project-results__number {
         font-size: 60px;
-        font-size: 3.75rem;
     }
 }
 
 .project-results__label {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 18px;
+    font-weight: 500;
+
+
 }
 
 .project-results__item {
